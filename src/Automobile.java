@@ -1,14 +1,25 @@
-public class Automobile extends Veicolo{
-    @Override
+public class Automobile implements Veicolo{
 
-    String modello;
-    int anno;
-    int porte;
+
+    private String modello;
+    private int anno;
+    private int porte;
 
     public Automobile(String modello, int anno, int porte){
         this.modello = modello;
         this.anno = anno;
         this.porte = porte;
+    }
+
+    public String getModello(){
+        return this.modello;
+    }
+
+    public int getAnno(){
+        return this.anno;
+    }
+    public int getPorte(){
+        return this.porte;
     }
 
     public void startMotore(){
